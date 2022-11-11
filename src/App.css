@@ -1,0 +1,93 @@
+/* @font-face {
+    font-family: "custom-font";
+    src: url("fonts/custom-font.woff2")format("woff2"),
+        url("fonts/custom-font.woff")format("woff"),
+        url("fonts/custom-font.ttf")format("truetype")
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background: #a6a6a6;
+}
+.wrapper {
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background: black;
+    font-family: "custom-font";
+    padding: 18px;
+    box-shadow: 4px 9px 4px #4f4f4f;
+    margin: 50px auto;
+    color: #fff;    
+}
+.btn{
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    border: #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    color: #fff;    
+}
+.buttons{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 6px;
+    justify-items: center;
+}
+.btn:hover{
+    filter: brightness(120%);
+}
+.btn:active{
+    filter: brightness(90%);
+}
+.btn.btn-0,
+.btn.btn-1,
+.btn.btn-2,
+.btn.btn-17{
+    background: #a6a6a6;
+}
+.btn.btn-3,
+.btn.btn-7,
+.btn.btn-11,
+.btn.btn-15,
+.btn.btn-18
+{
+    background: #ff9501;
+}
+.btn.btn-16{
+    grid-column: 1 /span 2;
+    border-radius: 34px;
+    width: 120px;
+    text-align: left;
+    padding-left: 20px;
+}
+.calc-screen{
+    height: 125px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+.calc-screen p{
+    text-align: right;
+    margin: 0;
+}
+.largeSize{
+    font-size: 4rem;
+}
+.mediumSize{
+    font-size: 3.5rem;
+}
+.smallSize{
+    font-size: 3rem;
+}
